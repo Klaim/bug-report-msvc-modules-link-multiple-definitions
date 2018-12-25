@@ -1,0 +1,7 @@
+project = test_modules_ICE
+
+using version
+using config
+using test
+using install
+using dist

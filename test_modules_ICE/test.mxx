@@ -1,0 +1,11 @@
+export module test;
+export import std.core;
+
+namespace test
+{
+    export using Object = std::variant<int, std::string>;
+    
+    export Object foo() { return std::to_string(42); }
+
+    // std::string text = std::get<std::string>(foo()); // Uncomment to trigger the same issue
+}
